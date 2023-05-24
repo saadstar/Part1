@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,500&display=swap');
+/* ### Primary 
+- Moderate blue: hsl(238, 40%, 52%) 
+- Light grayish blue: hsl(239, 57%, 85%) 
+- Soft Red: hsl(358, 79%, 66%) 
+- Pale red: hsl(357, 100%, 86%) 
+### Neutral 
+- Dark blue: hsl(212, 24%, 26%) 
+- Grayish Blue: hsl(211, 10%, 45%) 
+- Light gray: hsl(223, 19%, 93%) 
+- Very light gray: hsl(228, 33%, 97%) 
+- White: hsl(0, 0%, 100%) */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik",serif;
+  background-color: hsl(228, 33%, 97%);
+}
+.app{
+  height: 100vh;
+}
+.container{
+  width: 90%;
+}
+.whiter{
+  background-color:hsl(0, 0%, 100%) ;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.abso{
+  position: absolute;
+  top:20%;
+  right: 10%;
+}
+@media only screen and (max-width: 600px) {
+  .revo {     
+      position: relative;
+    }
+    .whiter{
+      position: relative;
+    }
+  .abso {
+    position: absolute;
+      top: 76%;
+      left: 40%;
+  }
+}
+.butnContainer{
+  display: flex;
+  flex-direction: column;
+  background-color:hsl(223, 19%, 93%) ;
+  border-radius: 5px;
+  height: 100%;
+  margin-right: 1%;
+}
+.butnContainer >button{
+outline: none;
+border: none;
+padding: 0px 7px;
+background-color:hsl(223, 19%, 93%) ;
+color:hsl(239, 57%, 85%) ;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+}
+.butnContainer >button:hover{
+outline: none;
+border: none;
+background-color:hsl(223, 19%, 93%) ;
+color:hsl(238, 40%, 52%) ;
+}
+.butnContainer p{
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+  color: hsl(238, 40%, 52%);
+}
+p{
+  font-size: 17px;
+}
+.imger{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imger .d-flex{
+  display: flex;
+  align-items: center;
+  gap: 4%;
+}
+.imger .d-flex img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.imger .username{
+  font-weight: bold;
+}
+.imger .date{
+  font-weight: 300;
+  font-size: 12px;
+  color: gray;
+  width: 80px;
+}
+ /* Soft Red: hsl(358, 79%, 66%) - Pale red: hsl(357, 100%, 86%) */
+ .danger{
+color: hsl(358, 79%, 66%);
+font-weight: bold;
+ border: none;
+ background-color: inherit;
+}
+ .danger:hover{
+color: hsl(357, 100%, 86%);
+font-weight: bold;
+ border: none;
+ background-color: inherit;
+}
+.editer{
+color: hsl(238, 40%, 52%);
+font-weight: bold;
+ border: none;
+ background-color: inherit;
+}
+.editer i{
+padding-left: 4px;
+font-size: 12px;
+}
+.editer:hover{
+color: hsl(239, 57%, 85%);
+font-weight: bold;
+ border: none;
+ background-color: inherit;
+}
+.text-content{
+  color:gray ;
+  font-size: 17px;
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.lefte-border{
+  border-left: 2px solid hsl(223, 19%, 93%);
+}
+.replyto{
+  margin-right: 8px;
+color: hsl(238, 40%, 52%);
+font-weight: bold;
+font-size: 14px;
+}
+.you{
+      align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: -14px;
+        background-color: hsl(238, 40%, 52%);
+        padding: 1px 5px;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 1px;
+        cursor: pointer;
+}
+.input{
+    width: 85%;    
+  }
+  .btn{
+    background-color: hsl(238, 40%, 52%);
+    color:hsl(0, 0%, 100%) ;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .btn:hover{
+    color:hsl(0, 0%, 100%) ;
+    background-color:hsl(239, 57%, 85%);
+  }
+  .mb{
+    margin-bottom: 200px;
+  }
+  .cancel{
+    background-color: gray;
+    font: optional;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+  }
+  .cancel:hover{
+    background-color: lightgray;
+  }
+  .dangerious{
+    background-color: hsl(358, 79%, 66%);
+    font: optional;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+  }
+  .dangerious:hover{
+    background-color: hsl(357, 100%, 86%)
+  }
+
+  /* .start reply component  */
+    /* ### Primary 
+  - Moderate blue: hsl(238, 40%, 52%) 
+  - Light grayish blue: hsl(239, 57%, 85%) 
+  - Soft Red: hsl(358, 79%, 66%) 
+  - Pale red: hsl(357, 100%, 86%) 
+  ### Neutral 
+  - Dark blue: hsl(212, 24%, 26%) 
+  - Grayish Blue: hsl(211, 10%, 45%) 
+  - Light gray: hsl(223, 19%, 93%) 
+  - Very light gray: hsl(228, 33%, 97%) 
+  - White: hsl(0, 0%, 100%) */
+  .back-white{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-right: 0;
+    
+  }
+ .low-width{
+  width: 30px;
+  height: 100px;
+ }
+ .gap-4 .username{
+  padding-top: 9px;
+  margin-left: -5px;
+  font-weight: bold;
+  font-size: 17px;
+ }
+ .gap-4 .date{
+  font-weight: 300;
+    font-size: 12px;
+    color: gray;
+    padding-top: 11px;
+    margin-left: -5px;
+ }
+ .gap-4 .you{
+  height: 50%;
+  margin-top: 2%;
+ }
+ .col-8 .text-content{
+  width: 100%;
+ }
